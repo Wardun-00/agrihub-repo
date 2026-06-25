@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <title>AgriHub</title>
     <!-- AOS header file Linkup -->
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
     <!-- tailwind and dasyUi CDN linkup -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -18,6 +18,215 @@
         <!-- navbar section -->
 
     </header>
+
+
+    <!-- main section start -->
+    <main>
+        <!-- hero section -->
+         <section class="hero min-h-[85vh] bg-base-100">
+  <div class="hero-content flex-col-reverse lg:flex-row-reverse max-w-7xl">
+
+    <!-- Image -->
+    <div class="lg:w-1/2">
+      <img
+        src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200"
+        class="rounded-3xl shadow-2xl w-full h-[450px] object-cover" />
+    </div>
+
+    <!-- Content -->
+    <div class="lg:w-1/2">
+
+      <div class="badge badge-success badge-lg mb-5">
+        AgriHub Learning Center
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        Learn Smart
+        <span class="text-green-600">
+          Farming
+        </span>
+        Step by Step
+      </h1>
+
+      <p class="py-6 text-gray-500 text-lg">
+        Discover practical farming techniques, crop management,
+        seasonal cultivation methods, and expert agricultural
+        advice designed for both beginners and experienced farmers.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+
+        <button class="btn btn-success">
+          Explore Guides
+        </button>
+
+        <button class="btn btn-outline btn-success">
+          Watch Tutorial
+        </button>
+
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-3 gap-4 mt-10">
+
+        <div class="stat bg-base-200 rounded-xl">
+          <div class="stat-value text-success">50+</div>
+          <div class="stat-title">Guides</div>
+        </div>
+
+        <div class="stat bg-base-200 rounded-xl">
+          <div class="stat-value text-success">25+</div>
+          <div class="stat-title">Crops</div>
+        </div>
+
+        <div class="stat bg-base-200 rounded-xl">
+          <div class="stat-value text-success">100%</div>
+          <div class="stat-title">Free</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--farming guid cards section  -->
+<!-- Guide Categories Section -->
+<section class="py-20 bg-base-200">
+  <div class="max-w-7xl mx-auto px-5">
+
+    <!-- Section Title -->
+    <div class="text-center mb-14">
+      <span class="badge badge-success badge-lg mb-4">
+        Browse Categories
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Explore Farming Guides
+      </h2>
+
+      <p class="mt-4 max-w-2xl mx-auto text-gray-500">
+        Choose a crop category and discover complete farming guides,
+        cultivation methods, irrigation techniques, and harvesting tips.
+      </p>
+    </div>
+
+    <!-- Categories -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Card -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+          <img src="./assets/images/plant.png" alt="">
+          <h2 class="card-title mt-3">Rice Farming</h2>
+          <p class="text-sm text-gray-500">
+            Complete cultivation guide.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+          <img src="./assets/images/corn.png" alt="corn">
+          <h2 class="card-title mt-3">Corn Farming</h2>
+          <p class="text-sm text-gray-500">
+            Modern corn cultivation.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+          <img src="./assets/images/tomato.png" alt="">
+          <h2 class="card-title mt-3">Tomato</h2>
+          <p class="text-sm text-gray-500">
+            High yield tomato farming.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+          <img src="./assets/images/carrots.png" alt="">
+          <h2 class="card-title mt-3">Carrot</h2>
+          <p class="text-sm text-gray-500">
+            Healthy carrot production.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+            <img src="./assets/images/potato.png" alt="">
+          <h2 class="card-title mt-3">Potato</h2>
+          <p class="text-sm text-gray-500">
+            Potato cultivation tips.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+            <img src="./assets/images/onion.png" alt="">
+          <h2 class="card-title mt-3">Onion</h2>
+          <p class="text-sm text-gray-500">
+            Onion growing methods.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+            <img src="./assets/images/vegetable.png" alt="">
+          <h2 class="card-title mt-3">Vegetables</h2>
+          <p class="text-sm text-gray-500">
+            Seasonal vegetable guides.
+          </p>
+          <button class="btn btn-success btn-sm mt-3">
+            Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="card bg-success text-white shadow-xl hover:scale-105 transition duration-300 cursor-pointer">
+        <div class="card-body items-center text-center">
+            <img src="./assets/images/research.png" alt="">
+          <h2 class="card-title mt-3">View All</h2>
+          <p class="text-sm">
+            Browse every farming guide.
+          </p>
+          <button class="btn btn-neutral btn-sm mt-3">
+            All Guides
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    </main>
+
+
     <!-- navbar scripting -->
      <script src="./assets/js/navbar.js">
 
