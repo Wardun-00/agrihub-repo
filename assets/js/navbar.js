@@ -1,24 +1,29 @@
 fetch("./components/navbar.html")
 .then(response => response.text())
-.then(data =>{
+.then(data => {
+
     document.getElementById("navbar").innerHTML = data;
 
-
-   // Active Menu
+    // Active Menu
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-    const links = document.querySelectorAll("#navbar a");
-
-    links.forEach(link => {
-      const href = link.getAttribute("href");
-
-      if (href === currentPage) {
-        link.classList.add(
-          "text-green-600",
-          "font-bold",
-          "border-b-2",
-          "border-green-600"
-        );
-      }
+    document.querySelectorAll("#navbar a").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add(
+                "text-green-600",
+                "font-bold",
+                "border-b-2",
+                "border-green-600"
+            );
+        }
     });
-  });
+
+    // Mobile Menu
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu-2");
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+});
